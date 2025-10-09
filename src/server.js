@@ -6,18 +6,23 @@ import authRoutes from "./routes/auth.js";
 import customerRoutes from "./routes/customers.js";
 import leadRoutes from "./routes/leads.js";
 import cors from "cors";
+
 dotenv.config();
 const app = express();
+
+// Enable CORS first
+app.use(cors({
+  origin: "http://localhost:3000", // frontend URL
+  credentials: true
+}));
+
+// Body parser
 app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/customers", customerRoutes);
 app.use("/api/leads", leadRoutes);
-app.use(cors({
-  origin: "http://localhost:3000", // frontend URL
-  credentials: true
-}));
 
 // Connect MongoDB only in non-test env
 if (process.env.NODE_ENV !== "test") {
