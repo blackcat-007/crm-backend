@@ -10,6 +10,7 @@ import { validateBody, registerSchema, loginSchema } from "../middleware/validat
 
 const router = express.Router();
 
+
 router.post("/refresh", async (req, res) => {
   try {
     const { refreshToken } = req.body;

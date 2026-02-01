@@ -7,6 +7,7 @@ import { validateBody, leadSchema, updateLeadSchema } from "../middleware/valida
 
 const router = express.Router();
 
+
 /**
  * @route   POST /leads/:customerId
  * @desc    Create a new lead for a customer (any authenticated user)

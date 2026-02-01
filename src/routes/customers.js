@@ -7,6 +7,7 @@ import { validateBody, customerSchema } from "../middleware/validateMiddleware.j
 
 const router = express.Router();
 
+
 /**
  * @route   POST /customers
  * @desc    Create a new customer (Admin only)
