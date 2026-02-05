@@ -183,10 +183,11 @@ Contributions are welcome!
 
 - 🔁 Open a Pull Request
 
- ## 📄 License
-```
-This project is licensed under the MIT License.
-```
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
 
 ## 👨‍💻 Author
 
